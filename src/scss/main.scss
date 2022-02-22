@@ -9,9 +9,7 @@
     margin-top: 72px;
     font-size: 1rem;
     z-index: 10;
-    .navbar-toggler {
-        z-index: 1000;
-    }
+
     .container {
         .cart {
             position: relative;
@@ -56,7 +54,6 @@
         width: 18px !important;
         height: 18px !important;
         background-color: #fff !important;
-        z-index: 1000;
     }
 }
 .carousel-inner {
