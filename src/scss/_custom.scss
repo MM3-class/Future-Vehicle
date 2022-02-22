@@ -1,3 +1,4 @@
+@import "../../node_modules/bootstrap/scss/functions.scss";
   
   $white:    #fff;
   $gray-100: #f8f9fa;
@@ -27,6 +28,5 @@
 // BOOTSTRAP FILES 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap/scss/mixins.scss";
-  @import "../../node_modules/bootstrap/scss/functions.scss";
   @import "../../node_modules/bootstrap/scss/variables.scss";
   

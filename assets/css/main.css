@@ -11146,9 +11146,6 @@ $gutters: (
   font-size: 1rem;
   z-index: 10;
 }
-.navbar .navbar-toggler {
-  z-index: 1000;
-}
 .navbar .container .cart {
   position: relative;
 }
@@ -11187,7 +11184,6 @@ $gutters: (
   width: 18px !important;
   height: 18px !important;
   background-color: #fff !important;
-  z-index: 1000;
 }
 
 .carousel-inner {
