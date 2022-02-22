@@ -11237,7 +11237,6 @@ $gutters: (
 .carousel-inner .carousel-item img {
   height: 1197px;
   object-fit: cover;
-  width: 100%;
 }
 
 .we-future {
