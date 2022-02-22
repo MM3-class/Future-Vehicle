@@ -11174,6 +11174,7 @@ $gutters: (
 .carousel-indicators {
   position: absolute;
   top: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -11193,7 +11194,6 @@ $gutters: (
   transform: translate(-50px, -50px);
   left: 40%;
   top: 30%;
-  z-index: 10;
 }
 .carousel-inner .new-modal .new {
   background-color: #333;
@@ -11222,9 +11222,6 @@ $gutters: (
 .carousel-inner .btn:hover {
   background-color: #fff;
   border: none;
-}
-.carousel-inner .carousel-item .carousel-caption {
-  z-index: 10;
 }
 .carousel-inner .carousel-item::after {
   content: "";
