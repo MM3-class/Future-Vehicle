@@ -177,7 +177,6 @@
             }
         }
         .lead {
-            width: 700px;
             margin: 74px auto;
             font-size: 1.1rem;
         }
@@ -231,7 +230,7 @@
 .f-i {
     margin-top: 134PX;
     margin-bottom: 198px;
-    margin-left: 84px;
+    // margin-left: 84px;
     
     p {
         line-height: 2;
@@ -241,17 +240,30 @@
     }
 }
 .subscription {
+    margin-bottom: 180px;
     .form-control {
         border: 1px solid #000 !important;
+        border-radius: 0;
         &:focus {
             box-shadow: 1px 1px 3px #333;
         }
     }
-    .input-group-text  {
-        padding: 10px 35px;
+}
+
+footer {
+    a {
+        text-decoration: none;
+        color: $black;
+        &:hover {
+            color: $gray-600;
+        }
+    }
+    .form-select {
         border-radius: 0;
-        background: #2C2C2C;
-        letter-spacing: 2px;
-        cursor: pointer;
+        width: 237px;
+    }
+    .term-condition {
+        border-top: 1px solid $gray-600;
+        
     }
 }

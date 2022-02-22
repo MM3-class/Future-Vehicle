@@ -11310,7 +11310,6 @@ $gutters: (
   transform: translate(-50%, -50%);
 }
 .intro .header .lead {
-  width: 700px;
   margin: 74px auto;
   font-size: 1.1rem;
 }
@@ -11358,7 +11357,6 @@ $gutters: (
 .f-i {
   margin-top: 134PX;
   margin-bottom: 198px;
-  margin-left: 84px;
 }
 .f-i p {
   line-height: 2;
@@ -11367,18 +11365,30 @@ $gutters: (
   clip-path: polygon(35% 0%, 0% 100%, 100% 100%, 100% 0%);
 }
 
+.subscription {
+  margin-bottom: 180px;
+}
 .subscription .form-control {
   border: 1px solid #000 !important;
+  border-radius: 0;
 }
 .subscription .form-control:focus {
   box-shadow: 1px 1px 3px #333;
 }
-.subscription .input-group-text {
-  padding: 10px 35px;
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+footer a:hover {
+  color: #6c757d;
+}
+footer .form-select {
   border-radius: 0;
-  background: #2C2C2C;
-  letter-spacing: 2px;
-  cursor: pointer;
+  width: 237px;
+}
+footer .term-condition {
+  border-top: 1px solid #6c757d;
 }
 
 /*# sourceMappingURL=main.css.map */
