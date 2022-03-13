@@ -3,7 +3,48 @@
 @import "../scss/functions";
 
 // NAVBAR SECTION
+.carousel {
+    .carousel-inner img {
+        .carousel-item {
+            width: 50%;
+            height: 1100px;
+        }
+        height: auto;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+    .carousel-indicators {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        button {
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+
 .navbar {
+    z-index: 100;
+
+    .navbar-brand img{
+        width: 50px;
+    }
+    .container {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+/* .navbar {
     position: absolute;
     width: 100%;
     margin-top: 72px;
@@ -109,11 +150,11 @@
             bottom: 0;
         }
         img {
-            height: 1197px;
+            height: auto;
             object-fit: cover;
         }
     }
-}
+} */
 
 // WE FUTURE SECTION
 .we-future {
