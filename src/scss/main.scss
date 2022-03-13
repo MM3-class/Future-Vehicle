@@ -3,7 +3,7 @@
 @import "../scss/functions";
 
 // NAVBAR SECTION
-/* .carousel {
+.carousel {
     .carousel-inner img {
         .carousel-item {
             width: 50%;
@@ -15,8 +15,8 @@
         background-position: center;
         background-size: cover;
         object-fit: cover;
-    } */
-    /* .carousel-indicators {
+    }
+    .carousel-indicators {
         position: absolute;
         top: 50%;
         left: 70%;
@@ -28,11 +28,11 @@
             width: 18px;
             height: 18px;
         }
-    } */
-// }
+    }
+}
 
 
-/* .navbar {
+.navbar {
     z-index: 100;
 
     .navbar-brand img{
@@ -42,7 +42,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
-} */
+}
 
 
 /* .navbar {
