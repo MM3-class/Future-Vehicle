@@ -11429,12 +11429,31 @@ footer a {
 footer a:hover {
   color: #6c757d;
 }
-footer .form-select {
+footer #inputGroupSelect01 {
   border-radius: 0;
   width: 237px;
+  text-overflow: ellipsis;
 }
 footer .term-condition {
   border-top: 1px solid #6c757d;
+}
+
+.carousel-inner .carousel-item-next.carousel-item-left,
+.carousel-inner .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .active.carousel-item-right {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100% 0);
+}
+
+.carousel-inner .carousel-item-prev,
+.carousel-inner .active.carousel-item-left {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
 }
 
 /*# sourceMappingURL=main.css.map */

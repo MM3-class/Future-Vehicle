@@ -298,12 +298,32 @@ footer {
             color: $gray-600;
         }
     }
-    .form-select {
+    #inputGroupSelect01 {
         border-radius: 0;
         width: 237px;
+        text-overflow: ellipsis;
     }
     .term-condition {
         border-top: 1px solid $gray-600;
         
     }
+}
+
+// VERTICAL CAROUSEL SLIDER
+.carousel-inner .carousel-item-next.carousel-item-left,
+.carousel-inner .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+}
+
+.carousel-inner .carousel-item-next,
+.carousel-inner .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+.carousel-inner .carousel-item-prev,
+.carousel-inner .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
 }
