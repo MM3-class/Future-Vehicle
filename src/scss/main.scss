@@ -2,34 +2,19 @@
 @import "../scss/variables";
 @import "../scss/functions";
 
-// LOADER 
-.loader {
-    height: 100vh;
-    width: 100%;
+// SCROLLBAR 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
     background-color: rgba(255, 255, 255, .9);
-    position: absolute;
-    overflow: hidden;
-    display: block;
+    border-radius: 10px;
 }
-.icon-load {
-    width: 70px;
-    height: 70px;
-    border: 10px solid #333;
-    border-top-color: #000;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    @include keyframes(loader) {
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-    @include spin (loader, .7s, infinite, linear)
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
 }
+
 // NAVBAR SECTION
 .carousel {
     .carousel-inner img {

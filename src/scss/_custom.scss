@@ -27,20 +27,20 @@
   // VERTICAL CAROUSEL SLIDER
 .carousel-inner .carousel-item-next.carousel-item-left,
 .carousel-inner .carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
 }
 
 .carousel-inner .carousel-item-next,
 .carousel-inner .active.carousel-item-right {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate(100%, -100%);
+            transform: translate(100%, -100%);
 }
 
 .carousel-inner .carousel-item-prev,
 .carousel-inner .active.carousel-item-left {
--webkit-transform: translate3d(0,-100%, 0);
-        transform: translate3d(0,-100%, 0);
+-webkit-transform: translate(-100%, -100%);
+        transform: translate(-100%, -100%);
 }
 
 
