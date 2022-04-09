@@ -121,7 +121,8 @@ const addToCart = (id) => {
 }
 
 // UPDATE CART 
-const updateCart = () => {
+const updateCart = (event) => {
+    
     renderCart();
     calculateItems();
 
