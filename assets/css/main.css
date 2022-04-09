@@ -11218,9 +11218,11 @@ $gutters: (
 }
 .navbar .cart-section {
   display: none;
+  top: 100px;
+  position: absolute;
+  width: 100%;
 }
 .navbar .cart-section #list {
-  width: 75% !important;
   top: 100px;
   padding: 50px 0;
   margin: 20px auto;
@@ -11234,7 +11236,7 @@ $gutters: (
 }
 .navbar .cart-section .calculate-items {
   position: absolute;
-  width: 75%;
+  width: 100%;
   transform: translateX(-50%);
   z-index: 5000;
   top: 120px;
@@ -11243,10 +11245,6 @@ $gutters: (
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* .active-cart {
-    display: block;
-    // transform: translateY(100%);
-} */
 .we-future {
   margin-top: 238px;
   margin-bottom: 238px;

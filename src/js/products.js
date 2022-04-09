@@ -56,6 +56,7 @@ const btnRemoveEl = document.querySelector('.remove')
 const cartIcon = document.querySelector('.cart-icon');
 const cartList = document.querySelector('.cart-section');
 const cartSection = document.querySelector('.cart-section');
+const menuIcon = document.querySelector('.navbar-toggler');
 
 // TOGGLE ICON 
 cartIcon.addEventListener('click', () => {
@@ -66,6 +67,10 @@ cartIcon.addEventListener('click', () => {
         
         cartList.style.display = "none"
     }
+});
+// HIDE CART LIST WHEN CLOSE MENU ICON 
+menuIcon.addEventListener('click', () => {
+    cartList.style.display = "none"
 })
 
 const load = () => {

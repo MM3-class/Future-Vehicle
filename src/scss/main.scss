@@ -70,8 +70,10 @@
     }
     .cart-section {
         display: none;
+        top: 100px;
+        position: absolute;
+        width: 100%;
         #list {
-            width: 75% !important;
             top: 100px;
             padding: 50px 0;
             margin: 20px auto;
@@ -85,7 +87,7 @@
         }
         .calculate-items  {
             position: absolute;
-            width: 75%;
+            width: 100%;
             transform: translateX(-50%);
             z-index: 5000;
             top: 120px;
