@@ -43,20 +43,59 @@
             height: 18px;
         }
     }
-}
+};
 
 .navbar {
     z-index: 100;
-
+    
     .navbar-brand img{
         width: 50px;
     }
     .container {
         left: 50%;
         transform: translateX(-50%);
-    }
-}
 
+        .navbar-collapse {
+            .nav-link {
+                position: relative;
+                .counter {
+                    color: #f0f8ff;
+                    font-size: 12px;
+                    position: absolute;
+                    left: 19px;
+                    bottom: 25px;
+                }
+            }
+        }
+    }
+    .cart-section {
+        display: none;
+        #list {
+            width: 75% !important;
+            top: 100px;
+            padding: 50px 0;
+            margin: 20px auto;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.35);
+            .card {
+                width: 75% !important;
+                margin: auto;
+            }
+        }
+        .calculate-items  {
+            position: absolute;
+            width: 75%;
+            transform: translateX(-50%);
+            z-index: 5000;
+            top: 120px;
+            left: 50%;
+            letter-spacing: 2px;
+            background-color: rgba(255, 255, 255, .2)
+        }
+    }
+   
+};
 
 // WE FUTURE SECTION
 .we-future {
@@ -102,9 +141,7 @@
             }
         }
     }
-}
-
-
+};
 // INTRO SECTION
 .intro {
     margin-top: 185px;

@@ -11206,7 +11206,47 @@ $gutters: (
   left: 50%;
   transform: translateX(-50%);
 }
+.navbar .container .navbar-collapse .nav-link {
+  position: relative;
+}
+.navbar .container .navbar-collapse .nav-link .counter {
+  color: #f0f8ff;
+  font-size: 12px;
+  position: absolute;
+  left: 19px;
+  bottom: 25px;
+}
+.navbar .cart-section {
+  display: none;
+}
+.navbar .cart-section #list {
+  width: 75% !important;
+  top: 100px;
+  padding: 50px 0;
+  margin: 20px auto;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.navbar .cart-section #list .card {
+  width: 75% !important;
+  margin: auto;
+}
+.navbar .cart-section .calculate-items {
+  position: absolute;
+  width: 75%;
+  transform: translateX(-50%);
+  z-index: 5000;
+  top: 120px;
+  left: 50%;
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
+/* .active-cart {
+    display: block;
+    // transform: translateY(100%);
+} */
 .we-future {
   margin-top: 238px;
   margin-bottom: 238px;
@@ -11219,7 +11259,7 @@ $gutters: (
 }
 .we-future .header .display-4::after {
   content: "";
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0% white 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%);
   height: 20px;
   width: 515px;
   position: absolute;
@@ -11268,7 +11308,7 @@ $gutters: (
 }
 .intro .header .display-4::after {
   content: "";
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0% white 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%);
   height: 20px;
   width: 515px;
   position: absolute;

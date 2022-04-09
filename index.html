@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
- 
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-0 fw-bolder">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-0 fw-bolder position-relative">
       <div class="container position-absolute top-100 p-lg-5">
         <a class="navbar-brand" href="#"><img src="./src/icons/Logo.svg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +28,8 @@
             </li>
           </ul>
           <div class="navbar-text d-flex">
-            <a class="nav-link ps-0" href="#">
+            <a class="nav-link ps-0 cart-icon" href="#">
+              <span class="counter text-black"></span>
               <img src="./src/icons/Cart.svg" class="mx-2"><span>Cart</span>
             </a>
             <a class="nav-link ps-0" href="#">
@@ -38,8 +38,18 @@
           </div>
         </div>
       </div>
+     <div class="cart-section">
+        <div id="list" class="row row-cols-1 row-cols-md-2 g-4 w-75 position-absolute border-light">
+          <!-- RENDER ITEMS IN ARRAY products.js -->
+          
+        </div>
+        <div class="calculate-items d-flex flex-wrap justify-content-around align-items-center text-center p-2 text-dark">
+           <p class="subtotal m-0"></p>
+           <span class="total-price"></span>
+       </div>
+      </div>
     </nav>
-
+    
     <!-- HERO SECTION -->
     <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="false" data-bs-interval="false">
       <div class="carousel-indicators">
@@ -63,7 +73,7 @@
         </div>
       </div>
     </div>
-    
+
   <div class="container-fluid p-0 overflow-hidden">
     <!-- WE ARE FUTURE SECTION  -->
     <section class=" container we-future">
@@ -117,63 +127,10 @@
          </div>
       </div>
     </section>
+
     <div class="container vehicles">
-      <div class="row row-cols-3 row-cols-md-2 justify-content-evenly g-5">
-        <div class="card col-4" style="width: 400px; height: 500px;">
-          <img src="./src/images/vehicles/vehicle1.svg" class="card-img-top" alt="vehicle1">
-          <div class="card-body">
-            <h5 class="card-title">NIO ET5</h5>
-            <h1 class="card-text mb-5 mt-3 display-6">$51.540</h1>
-            <a href="#" class="btn btn-primary mx-4 w-25  text-white">BUY</a>
-            <a href="#" class="btn btn-outline-dark w-20">Customize</a>
-          </div>
-        </div>
-        <div class="card col-4" style="width: 400px; height: 500px;">
-          <img src="./src/images/vehicles/vehicle2.svg" class="card-img-top" alt="vehicle2">
-          <div class="card-body">
-            <h5 class="card-title">NIO ET7</h5>
-            <h1 class="card-text mb-5 mt-3 display-6">$70.000</h1>
-            <a href="#" class="btn btn-primary mx-4 w-25  text-white">BUY</a>
-            <a href="#" class="btn btn-outline-dark w-20">Customize</a>
-          </div>
-        </div>
-        <div class="card col-4" style="width: 400px; height: 500px;">
-          <img src="./src/images/vehicles/vehicle3.svg" class="card-img-top" alt="vehicle3">
-          <div class="card-body">
-            <h5 class="card-title">NIO EC6</h5>
-            <h1 class="card-text mb-5 mt-3 display-6">$54.000</h1>
-            <a href="#" class="btn btn-primary mx-4 w-25  text-white">BUY</a>
-            <a href="#" class="btn btn-outline-dark w-20">Customize</a>
-          </div>
-        </div>
-        <div class="card col-4" style="width: 400px; height: 500px;">
-          <img src="./src/images/vehicles/vehicle4.svg" class="card-img-top" alt="vehicle4">
-          <div class="card-body">
-            <h5 class="card-title">NIO ES6</h5>
-            <h1 class="card-text mb-5 mt-3 display-6">$55.000</h1>
-            <a href="#" class="btn btn-primary mx-4 w-25  text-white">BUY</a>
-            <a href="#" class="btn btn-outline-dark w-20">Customize</a>
-          </div>
-        </div>
-        <div class="card col-4" style="width: 400px; height: 500px;">
-          <img src="./src/images/vehicles/vehicle5.svg" class="card-img-top" alt="vehicle5">
-          <div class="card-body">
-            <h5 class="card-title">NIO ES8</h5>
-            <h1 class="card-text mb-5 mt-3 display-6">$59.463</h1>
-            <a href="#" class="btn btn-primary mx-4 w-25  text-white">BUY</a>
-            <a href="#" class="btn btn-outline-dark w-20">Customize</a>
-          </div>
-        </div>
-        <div class="card col-4" style="width: 400px; height: 500px;">
-          <img src="./src/images/vehicles/vehicle6.svg" class="card-img-top" alt="vehicle6">
-          <small>NEW</small>
-          <div class="card-body">
-            <h5 class="card-title">Canoo Lifestyle (Base)</h5>
-            <h1 class="card-text mb-5 display-6">$34.000</h1>
-            <a href="#" class="btn btn-primary mx-4 w-25 text-white">BUY</a>
-            <a href="#" class="btn btn-outline-dark w-20">Customize</a>
-          </div>
-        </div>
+      <div class="row row-cols-3 row-cols-md-2 justify-content-evenly g-5 vehicles-contain">
+        <!-- RENDER PRODUCTS IN ARRAY products.js -->
       </div>
     </div>
 
@@ -327,6 +284,7 @@
         </div>
       </div>
     </footer>
+    <script src="/src/js/products.js"></script>
     <!-- JS & POPPER -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
